@@ -1,3 +1,6 @@
+from collections import OrderedDict
+
+
 def get_capabilities(context):
     capabilities = []
     print("Enter SmartThings Device Capabilities for your Driver (Ctrl-D to end):")
