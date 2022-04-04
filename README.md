@@ -1,8 +1,8 @@
 # Install Cookiecutter
 
-See [cookiecutter]().
+See [cookiecutter](https://github.com/cookiecutter/cookiecutter).
 
-For macOS, [homebrew]() gets you started:
+For macOS, [homebrew](https://brew.sh) gets you started:
 
 ```
 brew install cookiecutter
@@ -37,3 +37,4 @@ code .
 ## Prerequisites
 
 - `node`
+- `nvm`
