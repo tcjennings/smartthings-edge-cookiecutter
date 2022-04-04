@@ -1,0 +1,5 @@
+#!/bin/bash
+set -e
+
+# Onboards a new device
+smartthings edge:drivers:logcat [DRIVER_ID] --hub-address {{cookiecutter.hub_address}}

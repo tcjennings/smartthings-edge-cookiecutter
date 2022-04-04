@@ -1,0 +1,5 @@
+name: {{cookiecutter.project_name}}
+packageKey: {{cookiecutter.project_name | slugify}}
+permissions:
+  lan: {}
+  discovery: {}

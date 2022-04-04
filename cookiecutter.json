@@ -1,0 +1,13 @@
+{
+    "full_name": "Your Name",
+    "email": "your.name@example.com",
+    "project_name": "Your Project Name",
+    "project_slug": "{{cookiecutter.project_name | slugify}}",
+    "device_type": [
+        "LAN",
+        "Zigbee",
+        "Z-Wave"
+    ],
+    "hub_address": "127.0.0.1",
+    "_capabilities": null
+}

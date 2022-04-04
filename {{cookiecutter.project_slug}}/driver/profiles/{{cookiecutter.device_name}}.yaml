@@ -1,0 +1,10 @@
+name: {{cookiecutter.device_name}}.v1
+components:
+- id: main
+  capabilities:
+  categories:
+  - name: ""
+metadata:
+  deviceType: {{cookiecutter.device_type}}
+  ofcDeviceType: ""
+  deviceTypeId: {{cookiecutter.device_type}}

@@ -1,0 +1,18 @@
+#!/bin/bash
+set -e
+
+# Uploads the driver to SmartThings
+smartthings edge:drivers:package [DRIVER_DIRECTORY]
+
+# Creates a channel for the driver
+smartthings edge:channels:create
+
+# Enrolls your hub in the channel
+smartthings edge:channels:enroll
+
+# Publishes the driver to the channel
+smartthings edge:drivers:publish
+
+# Installs the driver
+smartthings edge:drivers:install
+
