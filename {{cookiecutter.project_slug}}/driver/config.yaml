@@ -1,5 +1,11 @@
 name: {{cookiecutter.project_name}}
 packageKey: {{cookiecutter.project_name | slugify}}
 permissions:
+{%- if cookiecutter.device_network_type == "LAN" %}
   lan: {}
   discovery: {}
+{%- elif cookiecutter.device_network_type == "Zigbee" %}
+  zigbee: {}
+{%- elif cookiecutter.device_network_type == "Z-Wave" %}
+  zwave: {}
+{%- endif %}

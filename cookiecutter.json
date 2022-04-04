@@ -3,11 +3,16 @@
     "email": "your.name@example.com",
     "project_name": "Your Project Name",
     "project_slug": "{{cookiecutter.project_name | slugify}}",
-    "device_type": [
+    "device_network_type": [
         "LAN",
         "Zigbee",
         "Z-Wave"
     ],
+    "device_name": "{{cookiecutter.project_name | replace(' ', '')}}",
     "hub_address": "127.0.0.1",
-    "_capabilities": null
+    "_capabilities": null,
+    "_categories": null,
+    "_copy_without_render": [
+        "driver/profiles/*.yaml"
+    ]
 }

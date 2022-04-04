@@ -1,10 +1,20 @@
 name: {{cookiecutter.device_name}}.v1
 components:
-- id: main
+# Components are used to include and group Capabilities in a Device Profile.
+- label: main
+  id: main
+  # https://developer-preview.smartthings.com/docs/devices/capabilities/capabilities-reference
   capabilities:
+{%- for capability in cookiecutter._capabilities %}
+    - id: {{capability}}
+      version: 1
+{%- endfor %}
+  # https://developer-preview.smartthings.com/docs/devices/device-profiles#categories
   categories:
-  - name: ""
+{%- for category in cookiecutter._categories %}
+    - name: {{category}}
+{%- endfor %}
 metadata:
-  deviceType: {{cookiecutter.device_type}}
+  deviceType: {{cookiecutter.device_network_type}}
   ofcDeviceType: ""
-  deviceTypeId: {{cookiecutter.device_type}}
+  deviceTypeId: {{cookiecutter.device_network_type}}
